@@ -1,0 +1,51 @@
+BRIEF PROJECT REPORT
+
+1. INTRODUCTION
+The Campus Shop Inventory Management System is a simple Java application designed to represent and manage products sold in a campus shop. It stores product identification, name, category, unit price and quantity in stock. The application demonstrates the OOP concepts required in the coursework.
+
+2. CLASS DESIGN
+The project contains two Java classes in the campusshop package.
+
+Product class
+The Product class represents an individual shop product. It contains five private attributes:
+- productId (int)
+- productName (String)
+- productCategory (String)
+- unitPrice (double)
+- quantityInStock (int)
+
+The attributes are private to demonstrate encapsulation. The class has a no-argument constructor so that objects can be created first and their details assigned using setter methods.
+
+Main class
+The Main class contains the public static void main(String[] args) method, which is the starting point of the application. It creates five Product objects, assigns different details to them, displays their information, updates one product and tests invalid values.
+
+3. OBJECTS
+Five independent Product objects are created:
+1. Exercise Book
+2. Blue Pen
+3. Printing Paper
+4. Flash Disk
+5. Calculator
+
+Each object stores its own product ID, name, category, price and stock quantity. Updating one object does not automatically change the information stored in another object.
+
+4. GETTERS AND SETTERS
+Getter methods retrieve the values of the five private attributes. 
+Setter methods assign or update those values. 
+The displayProduct method in Main uses getters to display product information.
+
+5. VALIDATION
+The setUnitPrice method rejects a negative price. The setQuantityInStock method rejects a negative stock quantity. When an invalid value is supplied, an error message is displayed and the previous valid value is retained.
+
+6. TESTING
+When Main is executed, the application:
+- Displays the information for all five products.
+- Shows that two different Product objects maintain independent prices.
+- Changes the exercise book price from UGX 3,000 to UGX 3,500.
+- Changes the exercise book stock quantity from 50 to 70.
+- Attempts to set a negative price and confirms that the valid price remains unchanged.
+- Attempts to set a negative stock quantity and confirms that the valid stock remains unchanged.
+
+7. CONCLUSION
+The application demonstrates classes, objects, encapsulation, private attributes, getters, setters and basic validation using Java. It meets the stated functional requirements for the Campus Shop Inventory Management System coursework.
+
